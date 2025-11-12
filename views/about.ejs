@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About <%= shopName %></title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Welcome to <%= shopName %> Shop</h1>
+    <p>Our drinks shop business is expanding! Here are our locations:</p>
+
+    <ul class="shop-list">
+      <% shops.forEach(function(shop) { %>
+        <li>
+          <strong>Location:</strong> <%= shop.location %><br>
+          <strong>Manager:</strong> <%= shop.manager %><br>
+          <strong>Address:</strong> <%= shop.address %>
+        </li>
+      <% }); %>
+    </ul>
+
+  </body>
+</html>

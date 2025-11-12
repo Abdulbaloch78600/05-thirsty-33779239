@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to <%= shopName %> Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <h1>Welcome to <%= shopName %> Shop</h1>
+    <h3>This is the Search page</h3>
+
+    <!-- Search form with two fields -->
+    <form action="/search_result" method="GET" style="display: flex; align-items: center; gap: 10px;">
+        <label for="search_box">Item name:</label>
+        <input id="search_box" type="text" name="search_text" placeholder="Enter item name" required>
+      
+        <label for="category_box">Category:</label>
+        <input id="category_box" type="text" name="category" placeholder="Enter category" required>
+      
+        <input type="submit" value="OK">
+      </form>
+      
+      
+  </body>
+</html>
